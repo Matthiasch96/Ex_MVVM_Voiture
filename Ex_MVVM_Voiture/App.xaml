@@ -1,0 +1,22 @@
+﻿<Application x:Class="Ex_MVVM_Voiture.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Ex_MVVM_Voiture"
+             xmlns:vm="clr-namespace:Ex_MVVM_Voiture.ViewModels"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <vm:MainViewModel x:Key="MainVM"/>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="10,5"/>
+            <Style.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="20"></Setter>
+                </Style>
+            </Style.Resources>
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="Margin" Value="10,5"/>
+
+        </Style>
+    </Application.Resources>
+</Application>
